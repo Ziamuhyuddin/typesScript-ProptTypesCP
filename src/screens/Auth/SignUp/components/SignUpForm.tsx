@@ -25,6 +25,9 @@ const SignUpForm = () => {
 
   const submitHandler = ({setSubmitting}: any) => {
     // const data: any = {email: String(email)};
+    setTimeout(() => {
+      setSubmitting(false);
+    }, 5000);
   };
   return (
     <View style={styles.formCon}>
